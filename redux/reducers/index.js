@@ -1,5 +1,5 @@
 // Imports: Dependencies
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 
 // Imports: Reducers
 import authReducer from './authReducer';

@@ -1,8 +1,8 @@
 // Initial State
 const initialState = {
-    counter: 0,
-  };
-  
+  counter: 0,
+};
+
 // Reducers (Modifies The State And Returns A New State)
 const counterReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -13,7 +13,7 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         // Redux Store
         counter: state.counter + 1,
-      }
+      };
     }
 
     // Decrease Counter
@@ -23,7 +23,7 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         // Redux Store
         counter: state.counter - 1,
-      }
+      };
     }
 
     // Default
