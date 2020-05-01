@@ -111,7 +111,22 @@ const mapStateToProps = state => {
   };
 };
 
+// can use like this for dispatch or -------
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     increaseCounter: () => dispatch(increaseCounter()),
+//     decreaseCounter: () => dispatch(decreaseCounter()),
+//     login: () => dispatch(decreaseCounter()),
+//   };
+// };
+
 export default connect(
   mapStateToProps,
-  {increaseCounter, decreaseCounter, login},
+  // mapDispatchToProps,
+  //this
+  {
+    increaseCounter,
+    decreaseCounter,
+    login,
+  },
 )(Counter);
